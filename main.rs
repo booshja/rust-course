@@ -1,18 +1,18 @@
 fn main() {
-    let is_it_fun: bool = true;
-    // i32 -> signed integer of 32 bits
-    // -> signed can hold positive and negative values
-    let num: i32 = -10;
+    // same as writing 98000, it's a formatting sugar
+    let custom_num = 98_000;
 
-    // u8 -> unsigned integer of 8 bits
-    // 2^8 - 1 = 255 (max value can store with this type)
-    let small_num: u8 = 255;
+    // 16 bit system 0->9, a->f
+    let hex_num = 0xfa;
 
-    // i8 -> signed integer of 8 bits
-    // -2^7 = -128 -> 2^7 - 1 = 127
-    let small_num_2: i8 = -128;
+    // 0b = this is a binary number
+    // 101011 is your active binary number
+    let bin_num = 0b0010_1011;
 
-    // operating system related type
-    let sys_num: isize = -10;
-    let sys_num_2: usize = 10;
+    let byte_num = b'A';
+
+    println!("{}", custom_num);
+    println!("{}", hex_num);
+    println!("{}", bin_num);
+    println!("{}", byte_num);
 }
