@@ -1,18 +1,17 @@
 fn main() {
-    // same as writing 98000, it's a formatting sugar
-    let custom_num = 98_000;
+    let float_num: f32 = 3.14;
+    let float_num_2: f64 = 3.2;
 
-    // 16 bit system 0->9, a->f
-    let hex_num = 0xfa;
+    let tup = (20, "Hello", 1);
 
-    // 0b = this is a binary number
-    // 101011 is your active binary number
-    let bin_num = 0b0010_1011;
+    println!("{}", tup.1);
 
-    let byte_num = b'A';
+    let (a, b, c) = tup;
+    println!("{}", c);
 
-    println!("{}", custom_num);
-    println!("{}", hex_num);
-    println!("{}", bin_num);
-    println!("{}", byte_num);
+    let x = [1, 5, 6, 7];
+    println!("{}", x[2]);
+
+    let y = [2; 6]; // [2, 2, 2, 2, 2, 2]
+    println!("{}", y[5]);
 }
